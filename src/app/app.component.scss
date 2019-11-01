@@ -1,0 +1,21 @@
+@import '~normalize.css';
+@import "../variables";
+@import "../brakepoints";
+
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+
+  @include media-breakpoint-down(sm) {
+    color: #663399;
+  }
+
+}
+
+
