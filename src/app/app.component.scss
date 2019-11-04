@@ -10,19 +10,4 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-
-
-}
-
-h2 {
-  color: red;
-
-  @include media-breakpoint-down(sm) {
-    color: #663399;
-  }
-
-  @include media-breakpoint-only(md) {
-    color: greenyellow;
-  }
-
 }

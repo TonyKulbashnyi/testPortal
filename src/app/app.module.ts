@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StartComponent } from './start/start.component';
+import { StartRecruiterComponent } from './start/start-recruiter/start-recruiter.component';
+import { StartSeekerComponent } from './start/start-seeker/start-seeker.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StartComponent,
+    StartRecruiterComponent,
+    StartSeekerComponent
   ],
   imports: [
     BrowserModule,
