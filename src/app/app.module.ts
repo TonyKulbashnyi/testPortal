@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
 import { StartRecruiterComponent } from './start/start-recruiter/start-recruiter.component';
 import { StartSeekerComponent } from './start/start-seeker/start-seeker.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     StartRecruiterComponent,
-    StartSeekerComponent
+    StartSeekerComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

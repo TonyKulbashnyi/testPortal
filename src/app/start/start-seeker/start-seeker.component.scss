@@ -1,0 +1,40 @@
+@import "~src/_variables.scss";
+@import "~src/_brakepoints.scss";
+
+.seeker {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-down(md) {
+    height: 50vh;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    .seeker__header {
+      transform: scale(1.2, 1.2);
+
+      @include media-breakpoint-down(sm) {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+  &__header {
+    cursor: pointer;
+    color: $primary;
+    transition: all .5s ease;
+    text-align: center;
+    padding: 0 30px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 10px;
+    }
+
+  }
+}

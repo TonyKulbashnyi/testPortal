@@ -1,8 +1,13 @@
-<div class="row">
-  <div class="col-lg-6">
+<div class="row start" (mouseleave)="onMouseLeave($event)"
+     [ngClass]="this.deg > 0
+     ? 'start-recruiter'
+     : this.deg === -1
+     ? 'start-seeker'
+     : '' ">
+  <div class="col-lg-6 col-md-12 start__recruiter " #recruiter (mouseenter)="onHoverRecruiter($event)">
     <app-start-recruiter></app-start-recruiter>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-md-12 start__seeker" (mouseenter)="onHoverSeeker($event)">
     <app-start-seeker></app-start-seeker>
   </div>
 </div>
