@@ -3,8 +3,10 @@
 
 
 .menu {
+
   &__list {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     display: flex;
@@ -28,6 +30,7 @@
      cursor: pointer;
      color: $primary;
      text-decoration: none;
+     transition: all .5s ease;
 
       &:hover {
         position: relative;

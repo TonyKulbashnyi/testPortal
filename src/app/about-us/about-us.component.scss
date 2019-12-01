@@ -1,0 +1,102 @@
+@import "~src/variables";
+@import "~src/brakepoints";
+
+.about-us {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+
+  &__info {
+    display: flex;
+    padding-left: 10vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    padding: 0 35px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $black;
+
+    & p:hover {
+      cursor: pointer;
+      transform: scale(1.2,1.2);
+    }
+
+    & p:nth-child(2n + 1) {
+      color: $primary;
+      transition: all .5s ease;
+
+    }
+
+    & p:nth-child(2n) {
+      color: $third;
+      transition: all .5s ease;
+    }
+
+
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    animation: 20s linear 0s normal none infinite running about-us__img;
+    -webkit-animation: 10s linear 0s normal none infinite running about-us__img;
+    width: 350px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 15px 0;
+    transition: all .5s ease;
+    color: $third;
+
+    & span {
+      display: inline-block;
+      transform: rotate(180deg);
+      position: relative;
+      top: 3px;
+      right: 11px;
+      color: $primary;
+    }
+
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2,1.2);
+    }
+
+    &::first-letter{
+      color: $primary;
+    }
+
+  }
+
+}
+
+@keyframes about-us__img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes about-us__img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
