@@ -8,6 +8,7 @@ import { StartRecruiterComponent } from './start/start-recruiter/start-recruiter
 import { StartSeekerComponent } from './start/start-seeker/start-seeker.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { TopicsComponent } from './topics/topics.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     StartRecruiterComponent,
     StartSeekerComponent,
     MenuComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TopicsComponent
   ],
   imports: [
     BrowserModule,
