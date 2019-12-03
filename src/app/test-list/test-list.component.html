@@ -1,0 +1,32 @@
+<section class="test-list">
+  <div class="test-list__list">
+      <div class="test-list__header">
+        <div class="test-list__point">
+            Creater
+        </div>
+        <div class="test-list__point">
+            Topic
+        </div>
+        <div class="test-list__point">
+          Level
+        </div>
+      </div>
+      <div class="test-list__item" *ngFor="let item of tests">
+        <div class="test-list__point">
+          {{item.creator}}
+        </div>
+        <div class="test-list__point">
+          {{item.topic}}
+        </div>
+        <div class="test-list__point">
+          {{item.level}}
+        </div>
+        <div class="test-list__point">
+          <button class="test-list__button">
+              Start
+          </button>
+        </div>
+      </div>
+
+  </div>
+</section>

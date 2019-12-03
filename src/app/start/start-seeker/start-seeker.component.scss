@@ -1,4 +1,3 @@
-@import "~src/_variables.scss";
 @import "~src/_brakepoints.scss";
 
 .seeker {
@@ -27,7 +26,7 @@
 
   &__header {
     cursor: pointer;
-    color: $primary;
+    color: var(--primary);
     transition: all .5s ease;
     text-align: center;
     padding: 0 30px;

@@ -1,9 +1,6 @@
-@import "~src/variables";
-@import "~src/brakepoints";
-
+@import "~src/_brakepoints.scss";
 
 .menu {
-
   &__list {
     position: fixed;
     z-index: 100;
@@ -16,7 +13,6 @@
     transform: translateX(-100%) rotate(-90deg);
     transform-origin: 100% 0;
     text-transform: lowercase;
-    background-color: white;
     line-height: 1.5rem;
     font-size: 1.25rem;
     font-weight: 500;
@@ -28,14 +24,14 @@
 
    &__item {
      cursor: pointer;
-     color: $primary;
+     color: var(--primary);
      text-decoration: none;
      transition: all .5s ease;
 
       &:hover {
         position: relative;
         transform: scale(1.2,1.2);
-        color: $secondary;
+        color: var(--secondary);
       }
    }
 }

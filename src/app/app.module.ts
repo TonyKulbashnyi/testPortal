@@ -14,6 +14,7 @@ import { TopicsComponent } from './topics/topics.component';
 import {LightComponent} from './light/light.component';
 import {ThemeService} from './theme.service';
 import {ReactiveFormsModule} from "@angular/forms";
+import { TestListComponent } from './test-list/test-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     AboutUsComponent,
     TopicsComponent,
     LightComponent,
-    LightComponent
+    LightComponent,
+    TestListComponent
   ],
   imports: [
     BrowserModule,
