@@ -1,5 +1,4 @@
-@import "~src/variables";
-@import "~src/brakepoints";
+//@import "~src/brakepoints";
 
 .about-us {
   width: 100vw;
@@ -18,7 +17,6 @@
     padding: 0 35px;
     font-size: 1.5rem;
     font-weight: 700;
-    color: $black;
 
     & p:hover {
       cursor: pointer;
@@ -26,13 +24,13 @@
     }
 
     & p:nth-child(2n + 1) {
-      color: $primary;
+      color: var(--primary);
       transition: all .5s ease;
 
     }
 
     & p:nth-child(2n) {
-      color: $third;
+      color: var(--third);
       transition: all .5s ease;
     }
 
@@ -58,15 +56,10 @@
     line-height: 3.5rem;
     padding: 15px 0;
     transition: all .5s ease;
-    color: $third;
+    color: var(--third);
 
     & span {
-      display: inline-block;
-      transform: rotatnge(180deg);
-      position: relative;
-      top: 3px;
-      right: 11px;
-      color: $primary;
+      color: var(--primary);
     }
 
 
@@ -76,7 +69,7 @@
     }
 
     &::first-letter{
-      color: $primary;
+      color: var(--primary);
     }
 
   }

@@ -1,23 +1,17 @@
-@import "~src/variables";
-@import "~src/brakepoints";
-
-
-
 .light {
   position: absolute;
   bottom: 1rem;
   right: 2rem;
 
   &__icon {
-    color: $primary;
+    color: var(--primary);
     font-size: 2rem;
     cursor: pointer;
     transition: all .2s ease;
 
     &:hover {
-      //color: $accent;
       font-size: 3rem;
-      color: var(--theme);
+      color: var(--accent);
     }
   }
 }

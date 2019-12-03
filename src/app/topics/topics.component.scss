@@ -8,7 +8,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 7vw 7vw 7vw 10vw;
-  //background: $black;
+  background: var(--theme-background);
 
   &__block {
     width: 20%;

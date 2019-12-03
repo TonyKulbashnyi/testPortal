@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
 import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
+import {Component, OnInit} from '@angular/core';
+import {darkTheme, ThemeService} from '../theme.service';
 
 @Component({
   selector: 'app-light',
@@ -7,16 +8,21 @@ import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./light.component.scss']
 })
 export class LightComponent implements OnInit {
+  darkTheme = false;
   faLightbulb = faLightbulb;
-
-
-  constructor() { }
+  constructor(private themeService: ThemeService) {
+  }
 
   ngOnInit() {
   }
 
   SwitchLight() {
-    console.log(123);
+    this.darkTheme = !this.darkTheme;
+    if (this.darkTheme) {
+      this.themeService.toggleDark();
+    } else {
+      this.themeService.toggleLight();
+    }
   }
 
 }

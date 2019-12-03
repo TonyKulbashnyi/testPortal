@@ -12,6 +12,8 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { TopicsComponent } from './topics/topics.component';
 import {LightComponent} from './light/light.component';
+import {ThemeService} from './theme.service';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import {LightComponent} from './light/light.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
