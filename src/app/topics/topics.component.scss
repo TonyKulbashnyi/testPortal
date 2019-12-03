@@ -8,11 +8,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 7vw 7vw 7vw 10vw;
+  //background: $black;
 
   &__block {
     width: 20%;
-    heigth: 20%;
-    //border: 1px solid $secondary;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,12 +21,10 @@
 
     @include media-breakpoint-down(md) {
       width: 25%;
-      heigth: 25%;
     }
 
     @include media-breakpoint-down(sm) {
       width: 50%;
-      heigth: 50%;
     }
 
     &:hover {
@@ -41,7 +38,8 @@
 
   &__descr {
     font-size: 1rem;
-    line-heigth: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
     color: $primary;
     padding: 5px;
     text-align: center;

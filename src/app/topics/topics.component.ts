@@ -26,7 +26,7 @@ export class TopicsComponent implements OnInit {
     },
     {
       img: 'assets/img/programmer-icons/var.png',
-      descr: 'Mathematic'
+      descr: 'Mathematics'
     },
     {
       img: 'assets/img/programmer-icons/c.png',
@@ -38,37 +38,37 @@ export class TopicsComponent implements OnInit {
     },
     {
       img: 'assets/img/programmer-icons/google.png',
-      descr: 'Phisics'
+      descr: 'Physics'
     },
     {
       img: 'assets/img/programmer-icons/html.png',
-      descr: 'html'
+      descr: 'HTML'
     },
     {
       img: 'assets/img/programmer-icons/js.png',
-      descr: 'js'
+      descr: 'JS'
     },
     {
       img: 'assets/img/programmer-icons/json.png',
-      descr: 'json'
+      descr: 'JSON'
     },
     {
       img: 'assets/img/programmer-icons/jsp.png',
-      descr: 'jsp'
+      descr: 'JSP'
     },
     {
       img: 'assets/img/programmer-icons/sql.png',
-      descr: 'sql'
+      descr: 'SQL'
     },
     {
       img: 'assets/img/programmer-icons/code1.png',
-      descr: 'fuctional programming'
+      descr: 'Fuctional Programming'
     },
     {
       img: 'assets/img/programmer-icons/code2.png',
-      descr: 'programming base'
+      descr: 'Programming Base'
     }
-  ]
+  ];
 
   constructor() { }
 

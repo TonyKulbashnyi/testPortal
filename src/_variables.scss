@@ -7,8 +7,9 @@ $third: #519bc9;
 $primary: #744fc4;
 $secondary: #ad51c9;
 
-
-
+:host {
+  --theme: #fff800;
+}
 
 $grid-breakpoints: (
   xs: 0,
