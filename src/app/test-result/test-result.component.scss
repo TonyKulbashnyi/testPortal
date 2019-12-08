@@ -1,0 +1,49 @@
+@import "~src/_brakepoints.scss";
+
+.test-result {
+  width: 100vw;
+  height: 100vh;
+
+  &__block {
+    margin: 10vw auto 15px;
+    width: 60vw;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    padding: 10px;
+    color: var(--primary);
+  }
+
+  &__result {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  &__value {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: calc(50% - 150px);
+    padding: 10px;
+    width: 300px;
+    color: var(--theme-background);
+    background: var(--third);
+    transition: all .5s ease;
+    border: 2px solid var(--third);
+    border-radius: 3px;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      background: var(--primary);
+      border: 2px solid var(--primary);
+    }
+  }
+
+
+
+
+}

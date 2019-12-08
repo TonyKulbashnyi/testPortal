@@ -15,6 +15,9 @@ import {LightComponent} from './light/light.component';
 import {ThemeService} from './theme.service';
 import {ReactiveFormsModule} from "@angular/forms";
 import { TestListComponent } from './test-list/test-list.component';
+import { TestComponent } from './test/test.component';
+import { TestResultComponent } from './test-result/test-result.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { TestListComponent } from './test-list/test-list.component';
     TopicsComponent,
     LightComponent,
     LightComponent,
-    TestListComponent
+    TestListComponent,
+    TestComponent,
+    TestResultComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

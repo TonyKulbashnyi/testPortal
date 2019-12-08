@@ -1,0 +1,110 @@
+@import "~src/_brakepoints.scss";
+
+.profile {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 10vw;
+
+  &__block {
+    margin: 10px auto;
+    display: flex;
+  }
+
+  &__header {
+    margin: 30px 0;
+    color: var(--primary);
+    font-weight: 800;
+  }
+
+  &__personal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+  }
+
+  &__info {
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    padding: 10px;
+    color: var(--primary);
+  }
+
+  &__skills {
+    margin: 30px 0;
+  }
+
+  &__skill {
+    width: 80%;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    background: var(--primary);
+    color: var(--theme-background);
+    transition: all .5s ease;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+    &-title {
+      margin: 40px 0 20px;
+    }
+  }
+
+  &__name,
+  &__surname,
+  &__age,
+  &__mail {
+    margin: 10px 0;
+  }
+
+  &__results {
+    margin-left: 10px;
+
+  }
+}
+
+.results {
+  &__title {
+    color: var(--primary);
+    margin-bottom: 15px;
+  }
+
+  &__header,
+  &__tests {
+    display: flex;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    padding: 0 10px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    background: var(--theme-background);
+  }
+  &__tests {
+    transition: all .5s ease;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+  }
+
+  &__point {
+    width: 25%;
+    margin: 10px 0;
+    border-right: 2px solid var(--primary);
+    text-align: center;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

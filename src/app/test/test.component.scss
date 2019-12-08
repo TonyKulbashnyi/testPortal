@@ -1,0 +1,218 @@
+@import "~src/_brakepoints.scss";
+
+.test {
+  &__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__header {
+    margin: 10vw auto 15px;
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    padding: 10px;
+    color: var(--primary);
+  }
+
+  &__block {
+    margin: 10px auto 15px;
+    width: 60vw;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    padding: 10px;
+    color: var(--primary);
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    transition: all .5s ease;
+
+    &:hover {
+      background: var(--secondary);
+      color: var(--theme-background);
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  &__question {
+    margin: 10px;
+    font-size: 1.25rem;
+  }
+
+  &__code {
+    display: block;
+    width: 45rem;
+    margin-left: 10px;
+    padding: 15px;
+    background: var(--primary);
+
+    & code {
+      color: var(--theme-background);
+    }
+  }
+
+  &__options {
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+
+    & input {
+      margin-right: 20px;
+    }
+  }
+
+  &__button {
+    padding: 10px;
+    width: 300px;
+    color: var(--theme-background);
+    background: var(--third);
+    transition: all .5s ease;
+    border: 2px solid var(--third);
+    border-radius: 3px;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      background: var(--primary);
+      border: 2px solid var(--primary);
+    }
+  }
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+  & input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__indicator {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary);
+    border: 0 solid var(--primary);
+    border-radius: 10px;
+  }
+
+  &:hover input ~ &__indicator,
+  & input:focus ~ &__indicator {
+    background: var(--primary);
+  }
+
+  & input:checked ~ &__indicator {
+    background: var(--third);
+  }
+
+  &:hover input:not([disabled]):checked ~ &__indicator,
+  &input:checked:focus ~ &__indicator {
+    background: var(--third);
+  }
+
+  & input:disabled ~ &__indicator {
+    background: var(--third);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  &__indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  & input:checked ~ &__indicator:after {
+    display: block;
+  }
+
+  &-checkbox &__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid var(--theme-background);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &-checkbox input:disabled ~ &__indicator:after {
+    border-color: var(--primary);
+  }
+
+  &-checkbox &__indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.505rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #2aa1c0;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+  }
+}
+
+@keyframes s-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes s-ripple-dup {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.control-checkbox input + .control__indicator::before {
+  animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control__indicator::before {
+  animation-name: s-ripple-dup;
+}

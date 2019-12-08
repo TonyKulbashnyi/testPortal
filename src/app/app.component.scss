@@ -2,6 +2,10 @@
 
 * {
   font-family: 'Comfortaa', cursive;
+  -moz-user-select: none; /* Mozilla Firefox */
+  -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+  -o-user-select: none; /* Opera Presto (не поддерживается) */
+  -webkit-user-select: none;
 }
 
 body {

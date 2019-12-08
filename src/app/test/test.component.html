@@ -1,0 +1,27 @@
+<section class="test test__container">
+  <div class="test__header">
+    <span class="test__number" *ngFor="let k of tests; let i = index;">
+      {{i}}
+    </span>
+  </div>
+  <div class="test__block" *ngFor="let test of tests;">
+
+    <p class="test__question">
+     {{test.question}}
+    </p>
+    <div class="test__code" *ngIf="test.codeExample">
+      <code [innerHTML]="test.codeExample">
+      </code>
+    </div>
+    <div class="test__options" *ngFor="let option of test.options; let i = index">
+      <label class="test__control control control-checkbox">
+        {{option.description}}
+        <input type="checkbox" [id]="i"/>
+        <span class="control__indicator"></span>
+      </label>
+    </div>
+  </div>
+  <button class="test__button">
+    Next
+  </button>
+</section>
