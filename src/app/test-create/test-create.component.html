@@ -3,14 +3,45 @@
 </h2>
 <section class="test test__container">
   <div class="test__block">
-
-    <p class="test__question">
-    </p>
-    <div class="test__options">
+    <div class="test__initial col-md-6">
+      <label>
+        <p class="test__question">
+          Питання:
+        </p>
+        <textarea rows="5" cols="45" name="question" class="test__question-input">
+        </textarea>
+      </label>
+      <label>
+        <p class="test__code">
+          Фрагмент коду:
+        </p>
+        <textarea rows="5" cols="45" name="code" class="test__code-input">
+        </textarea>
+      </label>
+    </div>
+    <div class="test__options col-md-6">
+      <label>
+        <p class="test__answer">
+          Правильна вiдповiдь:
+        </p>
+        <input type="text" class="test__answer-input">
+      </label>
+      <label>
+        <p class="test__answer test__answer-another">
+          Інші вiдповiді:
+        </p>
+        <input type="text" class="test__answer-input">
+        <input type="text" class="test__answer-input">
+        <input type="text" class="test__answer-input">
+        <input type="text" class="test__answer-input">
+      </label>
     </div>
   </div>
   <button class="test__button">
     Наступний
+  </button>
+  <button class="test__button test__button-end">
+    Закiнчити
   </button>
 </section>
 
