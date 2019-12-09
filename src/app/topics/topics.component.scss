@@ -1,14 +1,18 @@
 @import "~src/_brakepoints.scss";
 
 .topics {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 7vw 7vw 7vw 10vw;
+  padding: 4vw 7vw 7vw 10vw;
   background: var(--theme-background);
 
+  &__header {
+    padding-top: 100px;
+    padding-left: 10vw;
+    color: var(--primary);
+    font-size: 2rem;
+  }
   &__block {
     width: 20%;
     display: flex;

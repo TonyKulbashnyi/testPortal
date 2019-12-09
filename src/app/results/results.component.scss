@@ -1,7 +1,6 @@
 @import "~src/_brakepoints.scss";
 
-.test-list {
-  width: 100vw;
+.results {
 
   &__title {
     padding-top: 100px;
@@ -20,6 +19,19 @@
     border-radius: 3px;
     padding: 10px;
     color: var(--primary);
+
+    .results__point {
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
   }
 
   &__item {
@@ -30,32 +42,16 @@
     &:hover {
       transform:scale(1.1, 1.1);
     }
-    .test-list__point {
-      &:last-child {
-       border: none;
-      }
-    }
+
   }
 
   &__point {
-    width: 25%;
+    width: calc(90%/4);
     text-align: center;
     border-right: 2px solid var(--primary);
-  }
 
-  &__button {
-    width: 75%;
-    padding: 5px;
-    background-color: var(--theme-background);
-    border: 2px solid var(--third);
-    border-radius: 3px;
-    color: var(--third);
-    outline: none;
-
-    &:hover {
-      background-color: var(--third);
-      color: var(--theme-background);
+    &:first-child {
+      width: 10%;
     }
   }
-
 }

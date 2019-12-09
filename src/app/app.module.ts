@@ -13,11 +13,14 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { TopicsComponent } from './topics/topics.component';
 import {LightComponent} from './light/light.component';
 import {ThemeService} from './theme.service';
-import {ReactiveFormsModule} from "@angular/forms";
+import {ReactiveFormsModule} from '@angular/forms';
 import { TestListComponent } from './test-list/test-list.component';
 import { TestComponent } from './test/test.component';
 import { TestResultComponent } from './test-result/test-result.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ResultsComponent } from './results/results.component';
+import { AssessmentComponent } from './assessment/assessment.component';
+import { TestCreateComponent } from './test-create/test-create.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ProfileComponent } from './profile/profile.component';
     TestListComponent,
     TestComponent,
     TestResultComponent,
-    ProfileComponent
+    ProfileComponent,
+    ResultsComponent,
+    AssessmentComponent,
+    TestCreateComponent
   ],
   imports: [
     BrowserModule,

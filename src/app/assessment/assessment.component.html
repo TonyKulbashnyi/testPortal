@@ -1,0 +1,41 @@
+<section class="assessment">
+  <h2 class="assessment__title">
+    Переклік тестів
+  </h2>
+  <div class="assessment__list">
+    <div class="assessment__header">
+      <div class="assessment__point">
+        Напрям
+      </div>
+      <div class="assessment__point">
+        Рівень
+      </div>
+      <div class="assessment__point">
+        Кількість відповідей
+      </div>
+      <div class="assessment__point">
+        Середній результат
+      </div>
+    </div>
+    <div class="assessment__item" *ngFor="let result of assessments">
+      <div class="assessment__point">
+        {{result.topic}}
+      </div>
+      <div class="assessment__point">
+        {{result.level}}
+      </div>
+      <div class="assessment__point">
+        {{result.answers}}
+      </div>
+      <div class="assessment__point">
+        {{result.average}}
+      </div>
+    </div>
+    <div class="assessment__create">
+      <button class="assessment__button">
+        Cтворити новий тест
+      </button>
+    </div>
+  </div>
+</section>
+

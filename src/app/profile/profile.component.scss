@@ -1,8 +1,6 @@
 @import "~src/_brakepoints.scss";
 
 .profile {
-  width: 100vw;
-  height: 100vh;
   padding-left: 10vw;
 
   &__block {
@@ -11,9 +9,10 @@
   }
 
   &__header {
-    margin: 30px 0;
+    padding-top: 100px;
+    padding-bottom: 20px;
     color: var(--primary);
-    font-weight: 800;
+    font-size: 2rem;
   }
 
   &__personal {
@@ -69,7 +68,6 @@
 
   &__results {
     margin-left: 10px;
-
   }
 }
 
@@ -88,10 +86,9 @@
     color: var(--primary);
     margin-bottom: 15px;
     background: var(--theme-background);
+    transition: all .5s ease;
   }
   &__tests {
-    transition: all .5s ease;
-
     &:hover {
       transform: scale(1.2, 1.2);
     }

@@ -1,0 +1,41 @@
+<section class="results">
+  <h2 class="results__title">
+    Результати
+  </h2>
+  <div class="results__list">
+    <div class="results__header">
+      <div class="results__point">
+        &nbsp;
+      </div>
+      <div class="results__point">
+       Ім'я
+      </div>
+      <div class="results__point">
+        Прізвище
+      </div>
+      <div class="results__point">
+        Емейл
+      </div>
+      <div class="results__point">
+        Результат
+      </div>
+    </div>
+    <div class="results__item" *ngFor="let result of results">
+      <div class="results__point">
+        <img [src]="result.img"  [alt]="result.name" class="results__img">
+      </div>
+      <div class="results__point">
+        {{result.name}}
+      </div>
+      <div class="results__point">
+        {{result.surname}}
+      </div>
+      <div class="results__point">
+        {{result.email}}
+      </div>
+      <div class="results__point">
+        {{result.result}}
+      </div>
+    </div>
+  </div>
+</section>
